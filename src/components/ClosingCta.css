@@ -1,0 +1,97 @@
+.closing-cta-section {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.closing-cta-card {
+  position: relative;
+  text-align: center;
+  padding: 64px 32px;
+  background: radial-gradient(circle at 50% 30%, rgba(242, 120, 34, 0.15) 0%, rgba(15, 21, 34, 0.95) 75%);
+  border: 1px solid rgba(242, 120, 34, 0.35);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.cta-glow-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 250px;
+  background: radial-gradient(circle, var(--color-primary-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cta-content-wrapper {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.cta-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 5px 14px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+}
+
+.cta-kinetic-headline {
+  font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-white);
+  margin-bottom: 18px;
+  background: linear-gradient(135deg, #ffffff 40%, #ffa459 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-subline {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--color-offwhite);
+  line-height: 1.65;
+  margin-bottom: 36px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cta-btn-large {
+  padding: 16px 36px;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 640px) {
+  .closing-cta-card {
+    padding: 44px 20px;
+  }
+  .cta-actions-row {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cta-btn-large, .btn-secondary {
+    width: 100%;
+  }
+}

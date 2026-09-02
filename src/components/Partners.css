@@ -1,0 +1,195 @@
+.partners-section {
+  background-color: var(--color-bg-dark);
+  position: relative;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(26, 66, 151, 0.2) 0%, transparent 65%),
+    radial-gradient(circle at 80% 80%, rgba(242, 120, 34, 0.08) 0%, transparent 50%);
+  min-height: 100vh;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-content {
+  width: 90%;
+  max-width: 1100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.partners-badge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: var(--color-secondary-bright);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.partners-title {
+  font-size: 3.2rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 45px;
+  color: var(--color-white);
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+
+.partner-card {
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(12, 17, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.partner-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(242, 120, 34, 0.4);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7),
+              0 0 30px rgba(242, 120, 34, 0.15);
+}
+
+.partner-type {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.partner-type.sponsor-tag {
+  color: var(--color-primary);
+  background: rgba(242, 120, 34, 0.15);
+  border: 1px solid rgba(242, 120, 34, 0.3);
+}
+
+.partner-type.collab-tag {
+  color: var(--color-secondary-bright);
+  background: rgba(59, 113, 254, 0.15);
+  border: 1px solid rgba(59, 113, 254, 0.3);
+}
+
+.partner-logo-container {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.partner-logo {
+  max-width: 200px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: all 0.35s ease;
+}
+
+/* Specific styling for IEEE SPS Kerala Chapter logo -> Invert so it's pure crisp white */
+.partner-logo.collab1 {
+  filter: brightness(0) invert(1);
+  max-height: 85px;
+  opacity: 0.95;
+}
+
+/* Sizing for FISAT SB logo */
+.partner-logo.collab2 {
+  max-height: 75px;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+}
+
+/* Gadgeon logo */
+.partner-logo.sponsor {
+  max-height: 60px;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.15));
+}
+
+/* Tooltip on hover */
+.partner-tooltip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 100%;
+  padding: 16px;
+  background: rgba(8, 12, 22, 0.96);
+  border: 1px solid rgba(242, 120, 34, 0.4);
+  border-radius: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+  z-index: 20;
+  text-align: left;
+}
+
+.partner-tooltip h4 {
+  font-size: 0.95rem;
+  color: var(--color-white);
+  margin-bottom: 6px;
+}
+
+.partner-tooltip p {
+  font-size: 0.8rem;
+  color: var(--color-offwhite);
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+
+.tooltip-hint {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  display: block;
+}
+
+.partner-card:hover .partner-logo {
+  opacity: 0.08;
+  transform: scale(0.85);
+}
+
+.partner-card:hover .partner-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 900px) {
+  .partners-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .partner-card {
+    padding: 25px 20px;
+  }
+
+  .partners-title {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+  }
+}
