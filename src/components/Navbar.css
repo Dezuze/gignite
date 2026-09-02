@@ -7,21 +7,21 @@
   max-width: var(--max-width);
   height: 66px;
   z-index: 1000;
-  background: rgba(10, 14, 24, 0.75);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid var(--color-border-dark);
   border-radius: 999px;
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .navbar-header.navbar-scrolled {
   top: 10px;
-  background: rgba(8, 12, 20, 0.92);
+  background: rgba(255, 255, 255, 0.95);
   border-color: rgba(242, 120, 34, 0.25);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7),
-              0 0 20px rgba(242, 120, 34, 0.1);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08),
+              0 0 20px rgba(242, 120, 34, 0.05);
 }
 
 .navbar-container {
@@ -44,7 +44,7 @@
   font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: var(--color-white);
+  color: var(--color-text-main);
   display: flex;
   align-items: center;
 }
@@ -99,7 +99,7 @@
 .nav-link {
   font-size: 0.88rem;
   font-weight: 500;
-  color: var(--color-offwhite);
+  color: var(--color-text-main);
   text-decoration: none;
   position: relative;
   transition: color 0.2s ease;
@@ -210,7 +210,7 @@
   top: calc(100% + 8px);
   left: 0;
   width: 100%;
-  background: rgba(8, 12, 20, 0.98);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid var(--color-border-dark);
@@ -245,10 +245,10 @@
 .mobile-nav-link {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--color-offwhite);
+  color: var(--color-text-main);
   text-decoration: none;
   padding: 6px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .mobile-nav-link:hover {

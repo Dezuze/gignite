@@ -29,12 +29,12 @@
 
 .stage-1-card {
   border: 1px solid rgba(56, 189, 248, 0.25);
-  background: linear-gradient(165deg, rgba(14, 28, 48, 0.75) 0%, rgba(8, 14, 24, 0.85) 100%);
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.75) 0%, rgba(240, 244, 248, 0.85) 100%);
 }
 
 .stage-2-card {
   border: 1px solid rgba(242, 120, 34, 0.3);
-  background: linear-gradient(165deg, rgba(38, 20, 10, 0.6) 0%, rgba(12, 16, 26, 0.85) 100%);
+  background: linear-gradient(165deg, rgba(255, 245, 235, 0.75) 0%, rgba(255, 250, 245, 0.95) 100%);
 }
 
 .stage-card-glow-bg {

@@ -38,6 +38,17 @@ const RegistrationModal = ({ isOpen, onClose, preselectedThemeId }) => {
     }
   }, [preselectedThemeId]);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   const handleChange = (e) => {
@@ -74,7 +85,7 @@ const RegistrationModal = ({ isOpen, onClose, preselectedThemeId }) => {
   };
 
   return (
-    <div className="registration-modal-backdrop" onClick={onClose}>
+    <div className="registration-modal-backdrop" onClick={onClose} data-lenis-prevent="true">
       <div
         className="registration-modal-container glass-card"
         onClick={(e) => e.stopPropagation()}

@@ -7,7 +7,7 @@
   text-align: center;
   padding: 56px 32px;
   margin-bottom: 48px;
-  background: radial-gradient(circle at 50% 50%, rgba(242, 120, 34, 0.12) 0%, rgba(15, 21, 34, 0.85) 80%);
+  background: radial-gradient(circle at 50% 50%, rgba(242, 120, 34, 0.05) 0%, rgba(255, 255, 255, 0.85) 80%);
   border: 1px solid rgba(242, 120, 34, 0.3);
   overflow: hidden;
 }
@@ -32,10 +32,10 @@
   font-weight: 900;
   line-height: 1;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #ffffff 20%, #ffa459 70%, var(--color-primary) 100%);
+  background: linear-gradient(135deg, var(--color-secondary) 20%, #dc6210 70%, var(--color-primary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 50px var(--color-primary-glow);
+  text-shadow: none;
   margin-bottom: 18px;
 }
 

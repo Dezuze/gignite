@@ -1,7 +1,7 @@
 .statement-band-section {
   position: relative;
   width: 100%;
-  background: radial-gradient(circle at 50% 50%, rgba(18, 25, 42, 0.5) 0%, rgba(7, 9, 14, 0.85) 100%);
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5) 0%, rgba(245, 245, 245, 0.85) 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   padding: 100px 24px 105px;
@@ -39,7 +39,8 @@
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -0.04em;
-  color: rgba(255, 255, 255, 0.28);
+  color: var(--spotlight-color);
+  opacity: 0.5;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   user-select: none;
@@ -48,11 +49,11 @@
 }
 
 .massive-kinetic-word:hover {
-  color: rgba(255, 255, 255, 0.75);
+  opacity: 0.75;
 }
 
 .massive-kinetic-word.word-spotlight {
-  color: var(--spotlight-color);
+  opacity: 1;
   text-shadow: 0 0 50px var(--spotlight-glow),
                0 0 90px var(--spotlight-glow);
   transform: scale(1.03) translateY(-2px);
