@@ -69,6 +69,8 @@ body {
   background-position: 0 0, 20px 20px;
   pointer-events: none;
   z-index: 0;
+  mask-image: linear-gradient(to bottom, transparent 0%, transparent 100px, black 200px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 100px, black 200px);
 }
 
 /* Common Section Styles */

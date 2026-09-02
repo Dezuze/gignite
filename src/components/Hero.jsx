@@ -27,20 +27,7 @@ const Hero = ({ onOpenRegistration }) => {
         <div className="hero-glow hero-glow-left"></div>
         <div className="hero-glow hero-glow-right"></div>
         
-        {/* Ambient Subtle Waveform Flow (Positioned lower and organic) */}
-        <svg className="hero-circuit-svg" viewBox="0 0 1440 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M-100 460 C 350 560, 700 380, 1100 480 C 1300 520, 1500 440, 1650 480" stroke="url(#circuit-grad-1)" strokeWidth="1.5" strokeDasharray="6 6" opacity="0.2" />
-          <circle cx="700" cy="380" r="3.5" fill="#F27822" opacity="0.6" />
-          <circle cx="1100" cy="480" r="3.5" fill="#3b82f6" opacity="0.6" />
-          <circle cx="350" cy="560" r="3" fill="#10b981" opacity="0.5" />
-          <defs>
-            <linearGradient id="circuit-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.1" />
-              <stop offset="50%" stopColor="#F27822" stopOpacity="0.6" />
-              <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.1" />
-            </linearGradient>
-          </defs>
-        </svg>
+
 
         {/* Technical Floating Accent Nodes */}
         <div className="hero-node hero-node-1">
