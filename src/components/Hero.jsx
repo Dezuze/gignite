@@ -22,29 +22,22 @@ const Hero = ({ onOpenRegistration }) => {
 
   return (
     <section id="hero" className="hero-section">
-      {/* Background Circuit & Waveform Visuals */}
+      {/* Background Visuals without high cutting lines */}
       <div className="hero-bg-visuals" aria-hidden="true">
         <div className="hero-glow hero-glow-left"></div>
         <div className="hero-glow hero-glow-right"></div>
         
-        {/* Waveform & Circuit SVG Lines */}
+        {/* Ambient Subtle Waveform Flow (Positioned lower and organic) */}
         <svg className="hero-circuit-svg" viewBox="0 0 1440 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M-100 300 C 300 200, 600 450, 1000 250 C 1200 150, 1400 320, 1600 280" stroke="url(#circuit-grad-1)" strokeWidth="2" strokeDasharray="6 6" opacity="0.35" />
-          <path d="M-50 420 C 400 500, 800 200, 1200 380 C 1350 450, 1500 300, 1650 350" stroke="url(#circuit-grad-2)" strokeWidth="1.5" opacity="0.25" />
-          <circle cx="600" cy="450" r="4" fill="#F27822" opacity="0.7" />
-          <circle cx="1000" cy="250" r="4" fill="#3b82f6" opacity="0.7" />
-          <circle cx="400" cy="500" r="3" fill="#10b981" opacity="0.6" />
-          <circle cx="1200" cy="380" r="4" fill="#F27822" opacity="0.7" />
+          <path d="M-100 460 C 350 560, 700 380, 1100 480 C 1300 520, 1500 440, 1650 480" stroke="url(#circuit-grad-1)" strokeWidth="1.5" strokeDasharray="6 6" opacity="0.2" />
+          <circle cx="700" cy="380" r="3.5" fill="#F27822" opacity="0.6" />
+          <circle cx="1100" cy="480" r="3.5" fill="#3b82f6" opacity="0.6" />
+          <circle cx="350" cy="560" r="3" fill="#10b981" opacity="0.5" />
           <defs>
             <linearGradient id="circuit-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.1" />
-              <stop offset="50%" stopColor="#F27822" stopOpacity="0.8" />
+              <stop offset="50%" stopColor="#F27822" stopOpacity="0.6" />
               <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.1" />
-            </linearGradient>
-            <linearGradient id="circuit-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#F27822" stopOpacity="0.1" />
-              <stop offset="50%" stopColor="#3b82f6" stopOpacity="0.7" />
-              <stop offset="100%" stopColor="#10b981" stopOpacity="0.1" />
             </linearGradient>
           </defs>
         </svg>
@@ -66,14 +59,14 @@ const Hero = ({ onOpenRegistration }) => {
 
       {/* Hero Content Container */}
       <div className="hero-container">
-        {/* Eyebrow: Clean without pill background or dot */}
+        {/* Eyebrow */}
         <div className="hero-eyebrow-wrapper">
           <div className="hero-clean-eyebrow">
             <span className="eyebrow-text">{event.eyebrow}</span>
           </div>
         </div>
 
-        {/* Kinetic Main Headline (Fixed font descender clipping) */}
+        {/* Kinetic Main Headline */}
         <div className="hero-title-wrapper">
           <h1 className="hero-main-title">
             <span className="title-brand">gIGNITE</span>
@@ -94,11 +87,7 @@ const Hero = ({ onOpenRegistration }) => {
         <div className="hero-pills-row">
           {event.pills.map((pill) => (
             <div key={pill.id} className={`hero-feature-pill ${pill.live ? 'pill-live' : ''}`}>
-              {pill.live ? (
-                <span className="pulse-dot"></span>
-              ) : (
-                <Icon name={pill.iconName} size={15} color="currentColor" />
-              )}
+              <Icon name={pill.iconName} size={15} color="currentColor" />
               <span className="pill-txt">{pill.text}</span>
             </div>
           ))}
