@@ -18,8 +18,7 @@ export const HACKATHON_CONFIG = {
     },
     pills: [
       { id: "geo", text: "Kerala-wide", iconName: "globe" },
-      { id: "format", text: "24-Hour Grand Finale", iconName: "bolt" },
-      { id: "status", text: "Registrations Open", iconName: "dot", live: true }
+      { id: "format", text: "24-Hour Grand Finale", iconName: "bolt" }
     ],
     registrationStatus: {
       isOpen: true,

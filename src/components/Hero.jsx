@@ -66,10 +66,9 @@ const Hero = ({ onOpenRegistration }) => {
 
       {/* Hero Content Container */}
       <div className="hero-container">
-        {/* Eyebrow: Clean without pill background */}
+        {/* Eyebrow: Clean without pill background or dot */}
         <div className="hero-eyebrow-wrapper">
           <div className="hero-clean-eyebrow">
-            <span className="pulse-dot"></span>
             <span className="eyebrow-text">{event.eyebrow}</span>
           </div>
         </div>

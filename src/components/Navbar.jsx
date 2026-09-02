@@ -67,12 +67,8 @@ const Navbar = ({ onOpenRegistration }) => {
           ))}
         </nav>
 
-        {/* Persistent CTA & Status */}
+        {/* Persistent CTA */}
         <div className="navbar-actions">
-          <div className="nav-status-pill">
-            <span className="pulse-dot"></span>
-            <span>Stage 1 Live</span>
-          </div>
           <button
             className="btn btn-primary nav-register-btn"
             onClick={onOpenRegistration}
