@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Lenis from 'lenis';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import StatementBand from './components/StatementBand';
@@ -18,6 +19,11 @@ function App() {
   const [preselectedTheme, setPreselectedTheme] = useState(null);
 
   useEffect(() => {
+    // Initialize Lenis for smooth scrolling
+    const lenis = new Lenis({
+      autoRaf: true,
+      duration: 1.2,
+    });
     // Scroll Reveal Observer: adds 'in-view' class to elements as they scroll into viewport
     const observerCallback = (entries, observer) => {
       entries.forEach((entry) => {
@@ -45,7 +51,10 @@ function App() {
       observer.observe(el);
     });
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      lenis.destroy();
+    };
   }, []);
 
   const handleOpenRegistration = (themeId = null) => {
