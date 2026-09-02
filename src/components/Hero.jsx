@@ -69,8 +69,9 @@ const Hero = ({ onOpenRegistration }) => {
         {/* Kinetic Main Headline */}
         <div className="hero-title-wrapper">
           <h1 className="hero-main-title">
-            <span className="title-brand">gIGNITE</span>
-            <span className="title-divider">—</span>
+            <span className="title-brand">
+              <span className="hero-brand-g">g</span>IGNITE
+            </span>
             <span className="title-kinetic">{event.headline}</span>
           </h1>
         </div>

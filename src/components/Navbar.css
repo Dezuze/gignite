@@ -46,7 +46,7 @@
   letter-spacing: -0.02em;
   color: var(--color-white);
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .navbar-logo-text .brand-g {
@@ -54,14 +54,18 @@
 }
 
 .navbar-logo-text .brand-year {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  margin-left: 5px;
-  padding: 2px 6px;
+  margin-left: 6px;
+  padding: 3px 6px;
   background: var(--color-primary-subtle);
   color: var(--color-primary);
   border-radius: 6px;
   border: 1px solid rgba(242, 120, 34, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
 .navbar-collab-badge {
