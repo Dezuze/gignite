@@ -7,8 +7,8 @@ const StatementBand = () => {
   const [activeIdx, setActiveIdx] = useState(0);
 
   const words = [
-    { text: "Ideas.", color: "#F27822", glow: "rgba(242, 120, 34, 0.3)" },
-    { text: "Prototypes.", color: "#4A76C1", glow: "rgba(74, 118, 193, 0.3)" },
+    { text: "Ideas.", color: "#4A76C1", glow: "rgba(74, 118, 193, 0.3)" },
+    { text: "Prototypes.", color: "#333333", glow: "rgba(128, 128, 128, 0.5)" },
     { text: "Impact.", color: "#F27822", glow: "rgba(242, 120, 34, 0.3)" }
   ];
 
