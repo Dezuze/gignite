@@ -55,20 +55,17 @@ const Hero = ({ onOpenRegistration }) => {
 
         {/* Kinetic Main Headline */}
         <div className="hero-title-wrapper">
-          <h1 className="hero-main-title">
-            <span className="title-brand">
-              <span className="hero-brand-g">g</span>IGNITE
-            </span>
-            <span className="title-kinetic">{event.headline}</span>
-          </h1>
+          <div className="hero-main-logo-wrapper">
+            <img src="/logo.png" alt="g-IGNITE 2026" className="hero-main-logo" />
+          </div>
         </div>
 
         {/* Subline */}
         <p className="hero-subline">
           A premier statewide hackathon initiative by{' '}
-          <strong className="text-highlight-orange">{event.collaborators.lead}</strong>{' '}
+          <img src="/gadgeon-logo.png" alt={event.collaborators.lead} className="hero-inline-logo" />{' '}
           <span className="subline-milestone">({event.collaborators.leadNote})</span> in joint collaboration with{' '}
-          <strong className="text-highlight-blue">{event.collaborators.coOrganizer}</strong>.
+          <img src="/ieee-logo.png" alt={event.collaborators.coOrganizer} className="hero-inline-logo ieee-inline-logo" />.
         </p>
 
         {/* Feature Pills */}

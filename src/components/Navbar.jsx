@@ -45,9 +45,7 @@ const Navbar = ({ onOpenRegistration }) => {
       <div className="navbar-container">
         {/* Logo and Partner Tag */}
         <a href="#hero" className="navbar-brand-group" onClick={(e) => handleNavClick(e, '#hero')}>
-          <div className="navbar-logo-text">
-            <span className="brand-g">g</span>IGNITE <span className="brand-year">2026</span>
-          </div>
+          <img src="/logo.png" alt="g-IGNITE 2026" className="navbar-logo-img" />
           <div className="navbar-collab-badge">
             <span>Gadgeon × IEEE SPS KC</span>
           </div>

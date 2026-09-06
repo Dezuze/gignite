@@ -12,8 +12,8 @@ const Footer = ({ onOpenRegistration }) => {
         <div className="footer-top-grid">
           {/* Brand Col */}
           <div className="footer-brand-col">
-            <div className="footer-brand-title">
-              <span className="brand-g">g</span>IGNITE <span className="brand-year">2026</span>
+            <div className="footer-brand-logo-wrapper">
+              <img src="/logo.png" alt="g-IGNITE 2026" className="footer-brand-logo" />
             </div>
             <p className="footer-brand-desc">
               A flagship Kerala-wide AI &amp; Signal Processing Hackathon empowering student innovators to create production-grade hardware and software intelligence.
@@ -27,7 +27,9 @@ const Footer = ({ onOpenRegistration }) => {
           {/* Organizer: Gadgeon */}
           <div className="footer-partner-col">
             <span className="partner-role-badge sponsor-badge">EVENT SPONSOR &amp; LEAD</span>
-            <h4 className="partner-col-name">Gadgeon Smart Systems</h4>
+            <div className="partner-logo-wrapper">
+              <img src="/gadgeon-logo.png" alt="Gadgeon Smart Systems" className="partner-logo" />
+            </div>
             <p className="partner-col-desc">
               Premier Product Engineering and IoT Technology enterprise celebrating 15 years of engineering innovation.
             </p>
@@ -52,13 +54,33 @@ const Footer = ({ onOpenRegistration }) => {
                   <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
                 </svg>
               </a>
+              <a
+                href="https://www.facebook.com/GadgeonSmartSystems/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="partner-social-icon"
+                title="Gadgeon Facebook"
+              >
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+              <a
+                href="https://twitter.com/gadgeon"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="partner-social-icon"
+                title="Gadgeon Twitter"
+              >
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
             </div>
           </div>
 
           {/* Co-Organizer: IEEE SPS Kerala Chapter */}
           <div className="footer-partner-col">
             <span className="partner-role-badge ieee-badge">CO-ORGANIZER</span>
-            <h4 className="partner-col-name">IEEE SPS Kerala Chapter</h4>
+            <div className="partner-logo-wrapper">
+              <img src="/ieee-logo.png" alt="IEEE SPS Kerala Chapter" className="partner-logo ieee-logo" />
+            </div>
             <p className="partner-col-desc">
               IEEE Signal Processing Society Kerala Chapter advancing technical research, education, and student excellence.
             </p>
@@ -82,6 +104,24 @@ const Footer = ({ onOpenRegistration }) => {
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                   <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
                 </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/groups/ieeespskerala/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="partner-social-icon"
+                title="IEEE SPS Kerala Chapter Facebook"
+              >
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+              <a
+                href="https://twitter.com/IEEEKerala"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="partner-social-icon"
+                title="IEEE Kerala Section Twitter"
+              >
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </a>
             </div>
           </div>

@@ -174,19 +174,23 @@
   overflow: visible;
 }
 
-.title-brand {
-  color: var(--color-text-main);
-  background: linear-gradient(135deg, var(--color-secondary) 20%, #1a365d 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-bottom: 8px;
-  display: inline-block;
+.hero-main-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
 }
 
-.hero-brand-g {
-  color: var(--color-primary);
-  background: none;
-  -webkit-text-fill-color: var(--color-primary);
+.hero-main-logo {
+  height: 260px;
+  max-width: 90vw;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .hero-main-logo {
+    height: 150px;
+  }
 }
 
 .title-kinetic {
@@ -206,14 +210,16 @@
   font-weight: 400;
 }
 
-.text-highlight-orange {
-  color: #ff9d54;
-  font-weight: 700;
+.hero-inline-logo {
+  height: 24px;
+  width: auto;
+  vertical-align: middle;
+  margin: 0 4px;
+  transform: translateY(-2px);
 }
 
-.text-highlight-blue {
-  color: #60a5fa;
-  font-weight: 700;
+.ieee-inline-logo {
+  height: 28px;
 }
 
 .subline-milestone {

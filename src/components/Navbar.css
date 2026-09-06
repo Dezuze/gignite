@@ -38,40 +38,13 @@
   gap: 12px;
   text-decoration: none;
   cursor: pointer;
+  height: 100%;
 }
 
-.navbar-logo-text {
-  font-size: 1.35rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--color-text-main);
-  display: flex;
-  align-items: center;
-}
-
-.navbar-logo-text .brand-g {
-  color: var(--color-primary);
-}
-
-.navbar-logo-text .brand-year {
-  font-size: 0.72rem;
-  font-weight: 700;
-  margin-left: 6px;
-  padding: 3px 6px;
-  background: var(--color-primary-subtle);
-  color: var(--color-primary);
-  border-radius: 6px;
-  border: 1px solid rgba(242, 120, 34, 0.3);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-}
-
-@media (min-width: 860px) {
-  .navbar-logo-text .brand-year {
-    border: none;
-  }
+.navbar-logo-img {
+  height: calc(100% - 16px);
+  width: auto;
+  object-fit: contain;
 }
 
 .navbar-collab-badge {
