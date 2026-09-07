@@ -40,7 +40,7 @@ const Hero = ({ onOpenRegistration }) => {
         </div>
         <div className="hero-node hero-node-3">
           <Icon name="trophy" size={16} color="#10b981" />
-          <span className="node-label">₹3,00,000 Prize Pool</span>
+          <span className="node-label">Exciting Prizes</span>
         </div>
       </div>
 
@@ -62,10 +62,8 @@ const Hero = ({ onOpenRegistration }) => {
 
         {/* Subline */}
         <p className="hero-subline">
-          A premier statewide hackathon initiative by{' '}
-          <img src="/gadgeon-logo.png" alt={event.collaborators.lead} className="hero-inline-logo" />{' '}
-          <span className="subline-milestone">({event.collaborators.leadNote})</span> in joint collaboration with{' '}
-          <img src="/ieee-logo.png" alt={event.collaborators.coOrganizer} className="hero-inline-logo ieee-inline-logo" />.
+          A premier statewide hackathon initiative by {event.collaborators.lead}{' '}
+          <span className="subline-milestone">({event.collaborators.leadNote})</span> in joint collaboration with {event.collaborators.coOrganizer}.
         </p>
 
         {/* Feature Pills */}

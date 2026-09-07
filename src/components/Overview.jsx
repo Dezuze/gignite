@@ -49,13 +49,6 @@ const Overview = () => {
             </div>
           </div>
 
-          <button
-            className="btn btn-outline-orange read-brief-btn"
-            onClick={() => setIsBriefModalOpen(true)}
-          >
-            <Icon name="file-text" size={16} color="currentColor" />
-            <span>Read Full 9-Point Event Brief</span>
-          </button>
         </div>
 
         {/* Right Column: Key Focus Objectives */}
@@ -74,68 +67,10 @@ const Overview = () => {
             </ul>
           </div>
 
-          <div className="collab-note-box">
-            <div className="collab-icon-wrap">
-              <Icon name="users" size={20} color="#60a5fa" />
-            </div>
-            <p>
-              Organized under the patronage of <strong>IEEE Signal Processing Society (SPS) Kerala Chapter</strong> and sponsored by <strong>Gadgeon Smart Systems</strong>.
-            </p>
-          </div>
+
         </div>
       </div>
 
-      {/* Full Event Brief Modal (9 Objectives) */}
-      {isBriefModalOpen && (
-        <div className="brief-modal-backdrop" onClick={() => setIsBriefModalOpen(false)}>
-          <div
-            className="brief-modal-content glass-card"
-            onClick={(e) => e.stopPropagation()}
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="brief-modal-title"
-          >
-            <div className="brief-modal-header">
-              <div>
-                <span className="section-eyebrow">OFFICIAL EVENT CHARTER</span>
-                <h3 id="brief-modal-title" className="brief-modal-title">
-                  The 9 Strategic Objectives of gIGNITE
-                </h3>
-              </div>
-              <button
-                className="modal-close-btn"
-                onClick={() => setIsBriefModalOpen(false)}
-                aria-label="Close modal"
-              >
-                ✕
-              </button>
-            </div>
-
-            <div className="brief-modal-body">
-              <div className="objectives-9-grid">
-                {overview.fullObjectives.map((item) => (
-                  <div key={item.num} className="objective-9-card">
-                    <span className="obj-9-num">{item.num}</span>
-                    <div className="obj-9-info">
-                      <h4 className="obj-9-title">{item.title}</h4>
-                      <p className="obj-9-desc">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="brief-modal-footer">
-              <button
-                className="btn btn-primary"
-                onClick={() => setIsBriefModalOpen(false)}
-              >
-                Close Brief
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 };

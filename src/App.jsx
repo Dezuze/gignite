@@ -6,9 +6,9 @@ import StatementBand from './components/StatementBand';
 import Overview from './components/Overview';
 import Themes from './components/Themes';
 import EventStructure from './components/EventStructure';
-import Prizes from './components/Prizes';
+// import Prizes from './components/Prizes';
 import Timeline from './components/Timeline';
-import Team from './components/Team';
+// import Team from './components/Team';
 import ClosingCta from './components/ClosingCta';
 import Footer from './components/Footer';
 import RegistrationModal from './components/RegistrationModal';
@@ -96,13 +96,13 @@ function App() {
         <EventStructure />
 
         {/* 7. Prizes & Recognition */}
-        <Prizes />
+        {/* <Prizes /> */}
 
         {/* 8. Tentative Timeline */}
         <Timeline />
 
         {/* 9. Organizing Points of Contact */}
-        <Team />
+        {/* <Team /> */}
 
         {/* 10. Closing CTA */}
         <ClosingCta onOpenRegistration={() => handleOpenRegistration('01')} />

@@ -21,8 +21,6 @@ const Navbar = ({ onOpenRegistration }) => {
     { name: 'Themes', href: '#themes' },
     { name: 'Format', href: '#format' },
     { name: 'Timeline', href: '#timeline' },
-    { name: 'Prizes', href: '#prizes' },
-    { name: 'Team', href: '#team' },
   ];
 
   const handleNavClick = (e, href) => {
@@ -46,9 +44,6 @@ const Navbar = ({ onOpenRegistration }) => {
         {/* Logo and Partner Tag */}
         <a href="#hero" className="navbar-brand-group" onClick={(e) => handleNavClick(e, '#hero')}>
           <img src="/logo.png" alt="g-IGNITE 2026" className="navbar-logo-img" />
-          <div className="navbar-collab-badge">
-            <span>Gadgeon × IEEE SPS KC</span>
-          </div>
         </a>
 
         {/* Desktop Navigation Links */}
@@ -65,27 +60,27 @@ const Navbar = ({ onOpenRegistration }) => {
           ))}
         </nav>
 
-        {/* Persistent CTA */}
-        <div className="navbar-actions">
+        {/* Right Side Group */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          {/* Company Logos on Right */}
+          <div className="navbar-actions" style={{ display: 'flex' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <img src="/gadgeon-logo.png" alt="Gadgeon" className="nav-gadgeon-logo" />
+              <img src="/ieee-logo.png" alt="IEEE" className="nav-ieee-logo" />
+            </div>
+          </div>
+
+          {/* Mobile Hamburger Toggle */}
           <button
-            className="btn btn-primary nav-register-btn"
-            onClick={onOpenRegistration}
+            className="mobile-menu-toggle"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle navigation menu"
           >
-            <span>Register Team</span>
-            <Icon name="arrow-right" size={14} color="#ffffff" />
+            <span className={`hamburger-bar ${mobileMenuOpen ? 'open' : ''}`}></span>
+            <span className={`hamburger-bar ${mobileMenuOpen ? 'open' : ''}`}></span>
+            <span className={`hamburger-bar ${mobileMenuOpen ? 'open' : ''}`}></span>
           </button>
         </div>
-
-        {/* Mobile Hamburger Toggle */}
-        <button
-          className="mobile-menu-toggle"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle navigation menu"
-        >
-          <span className={`hamburger-bar ${mobileMenuOpen ? 'open' : ''}`}></span>
-          <span className={`hamburger-bar ${mobileMenuOpen ? 'open' : ''}`}></span>
-          <span className={`hamburger-bar ${mobileMenuOpen ? 'open' : ''}`}></span>
-        </button>
       </div>
 
       {/* Mobile Drawer */}
@@ -103,18 +98,7 @@ const Navbar = ({ onOpenRegistration }) => {
               </a>
             ))}
           </nav>
-          <div className="mobile-drawer-actions">
-            <button
-              className="btn btn-primary w-full"
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenRegistration();
-              }}
-            >
-              <span>Register Team</span>
-              <Icon name="arrow-right" size={14} color="#ffffff" />
-            </button>
-          </div>
+
         </div>
       </div>
     </header>

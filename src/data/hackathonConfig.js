@@ -51,7 +51,7 @@ export const HACKATHON_CONFIG = {
       "Two-tier competitive structure: Virtual Stage 1 shortlisting followed by a high-intensity 24-hour in-person Grand Finale.",
       "Direct technical mentorship from senior AI/ML architects and embedded systems experts at Gadgeon.",
       "Industry-standard continuous evaluation model assessing technical rigor, practical feasibility, and user experience.",
-      "Comprehensive ₹3,00,000 proposed prize pool along with internship, incubation, and IEEE recognition avenues."
+      "Comprehensive proposed prize pool along with internship, incubation, and IEEE recognition avenues."
     ],
     fullObjectives: [
       {
@@ -92,7 +92,7 @@ export const HACKATHON_CONFIG = {
       {
         num: "08",
         title: "High-Impact Recognition & Career Pathways",
-        desc: "Reward standout innovators with ₹3,00,000 in prizes, IEEE credentials, and direct technical career opportunities."
+        desc: "Reward standout innovators with exciting prizes, IEEE credentials, and direct technical career opportunities."
       },
       {
         num: "09",
@@ -206,7 +206,7 @@ export const HACKATHON_CONFIG = {
   },
 
   prizes: {
-    totalPool: "₹3,00,000",
+    totalPool: "Exciting Prizes",
     poolNote: "Proposed Total Prize Pool — Subject to Finalization",
     chips: [
       { id: "win", title: "Winner (1st Prize)", badge: "Champion", iconName: "trophy", rankNumber: "01" },
@@ -316,7 +316,7 @@ export const HACKATHON_CONFIG = {
 
   closingCta: {
     headline: "Ready to Fuel India's AI Future?",
-    subline: "Assemble your squad, choose your track, and take your shot at ₹3,00,000 in prizes and industry acclaim.",
+    subline: "Assemble your squad, choose your track, and take your shot at exciting prizes and industry acclaim.",
     primaryBtn: "Register Your Team",
     secondaryBtn: "Explore AI Themes"
   },

@@ -47,19 +47,23 @@
   object-fit: contain;
 }
 
-.navbar-collab-badge {
-  display: none;
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--color-muted);
-  border-left: 1px solid rgba(255, 255, 255, 0.15);
-  padding-left: 10px;
-  letter-spacing: 0.4px;
+.nav-gadgeon-logo {
+  height: 36px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.nav-ieee-logo {
+  height: 24px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
 
-@media (min-width: 960px) {
-  .navbar-collab-badge {
-    display: block;
+@media (min-width: 860px) {
+  .nav-gadgeon-logo {
+    height: 46px;
+  }
+  .nav-ieee-logo {
+    height: 36px;
   }
 }
 

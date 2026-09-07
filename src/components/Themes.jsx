@@ -20,47 +20,15 @@ const Themes = ({ onSelectThemeForRegistration }) => {
         </p>
       </div>
 
-      <div className="themes-grid centered-grid">
-        {themes.map((theme) => {
-          const isOpenTrack = theme.isOpenTrack;
-
-          return (
-            <div
-              key={theme.id}
-              className={`theme-card glass-card centered-card ${isOpenTrack ? 'theme-card-open-track' : ''}`}
-            >
-              <div className="theme-card-top-content centered-content">
-                <div className="theme-card-header centered-header-row">
-                  <span className="theme-code">{theme.code}</span>
-                  <span className="theme-tag">{theme.tag}</span>
-                </div>
-
-                <div className="theme-card-body centered-text">
-                  <h3 className="theme-title">{theme.title}</h3>
-                  <p className="theme-desc">{theme.description}</p>
-                </div>
-
-                <div className="theme-chips-list centered-chips">
-                  {theme.chips.map((chip, idx) => (
-                    <span key={idx} className="theme-chip">
-                      {chip}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              <div className="theme-card-footer centered-footer">
-                <button
-                  className="theme-select-btn"
-                  onClick={() => onSelectThemeForRegistration(theme.id)}
-                >
-                  <span>Build for this Track</span>
-                  <Icon name="arrow-right" size={15} color="currentColor" />
-                </button>
-              </div>
+      <div className="themes-grid centered-grid" style={{ display: 'flex', justifyContent: 'center' }}>
+        <div className="theme-card glass-card centered-card" style={{ maxWidth: '600px', width: '100%' }}>
+          <div className="theme-card-top-content centered-content">
+            <div className="theme-card-body centered-text" style={{ padding: '40px 20px' }}>
+              <h3 className="theme-title" style={{ fontSize: '1.5rem', marginBottom: '16px' }}>Themes To Be Announced</h3>
+              <p className="theme-desc">We are finalizing the problem statements and tracks for this year's hackathon. Stay tuned for exciting domains spanning edge AI, signal processing, and more!</p>
             </div>
-          );
-        })}
+          </div>
+        </div>
       </div>
     </section>
   );
