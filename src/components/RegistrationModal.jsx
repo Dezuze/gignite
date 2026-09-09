@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HACKATHON_CONFIG } from '../data/hackathonConfig';
 import { Icon } from './Icons';
+import { sanityClient } from '../lib/sanityClient';
 import './RegistrationModal.css';
 
 const RegistrationModal = ({ isOpen, onClose, preselectedThemeId }) => {
@@ -67,16 +68,51 @@ const RegistrationModal = ({ isOpen, onClose, preselectedThemeId }) => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    setTimeout(() => {
-      const generatedId = 'GIGNITE-2026-' + Math.floor(100000 + Math.random() * 900000);
+    const generatedId = 'GIGNITE-2026-' + Math.floor(100000 + Math.random() * 900000);
+    
+    try {
+      if (!import.meta.env.VITE_SANITY_PROJECT_ID) {
+        console.warn('Sanity Project ID not set, skipping backend submission for demo.');
+        setSubmissionId(generatedId);
+        setIsSubmitted(true);
+        setLoading(false);
+        return;
+      }
+
+      await sanityClient.create({
+        _type: 'registration',
+        referenceCode: generatedId,
+        teamName: formData.teamName,
+        college: formData.college,
+        teamSize: parseInt(formData.teamSize),
+        leadName: formData.leadName,
+        leadEmail: formData.leadEmail,
+        leadPhone: formData.leadPhone,
+        member2Name: formData.member2Name,
+        member2Email: formData.member2Email,
+        member3Name: formData.member3Name,
+        member3Email: formData.member3Email,
+        member4Name: formData.member4Name,
+        member4Email: formData.member4Email,
+        themeId: formData.themeId,
+        problemStatement: formData.problemStatement,
+        proposedSolution: formData.proposedSolution,
+        techApproach: formData.techApproach,
+        videoLink: formData.videoLink,
+      });
+
       setSubmissionId(generatedId);
       setIsSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting to Sanity:", error);
+      alert("There was an error submitting your registration. Please try again.");
+    } finally {
       setLoading(false);
-    }, 650);
+    }
   };
 
   const handleResetAndClose = () => {

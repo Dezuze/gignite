@@ -1,6 +1,7 @@
 import React from 'react';
 import { HACKATHON_CONFIG } from '../data/hackathonConfig';
 import { Icon } from './Icons';
+import VenueMap from './VenueMap';
 import './EventStructure.css';
 
 const EventStructure = () => {
@@ -33,7 +34,6 @@ const EventStructure = () => {
                 <span className="pulse-dot"></span>
                 <span>Stage 01 · Virtual</span>
               </span>
-              <span className="stage-cap-badge">100 Teams Cap</span>
             </div>
 
             <h3 className="stage-headline">{stage1.title}</h3>
@@ -43,11 +43,6 @@ const EventStructure = () => {
           </div>
 
           <div className="stage-metrics-row">
-            <div className="stage-mini-stat">
-              <span className="mini-stat-value">100</span>
-              <span className="mini-stat-label">Max Teams</span>
-            </div>
-            <div className="stage-stat-divider"></div>
             <div className="stage-mini-stat">
               <span className="mini-stat-value">Online</span>
               <span className="mini-stat-label">Submission Mode</span>
@@ -106,6 +101,7 @@ const EventStructure = () => {
                 <span className="meta-box-val">{stage2.period}</span>
               </div>
             </div>
+          <VenueMap />
 
             <div className="meta-highlight-box">
               <div className="meta-box-icon">
@@ -161,3 +157,4 @@ const EventStructure = () => {
 };
 
 export default EventStructure;
+

@@ -26,7 +26,6 @@ const Footer = ({ onOpenRegistration }) => {
 
           {/* Organizer: Gadgeon */}
           <div className="footer-partner-col">
-            <span className="partner-role-badge sponsor-badge">EVENT SPONSOR &amp; LEAD</span>
             <div className="partner-logo-wrapper">
               <img src="/gadgeon-logo.png" alt="Gadgeon Smart Systems" className="partner-logo" />
             </div>
@@ -77,7 +76,6 @@ const Footer = ({ onOpenRegistration }) => {
 
           {/* Co-Organizer: IEEE SPS Kerala Chapter */}
           <div className="footer-partner-col">
-            <span className="partner-role-badge ieee-badge">CO-ORGANIZER</span>
             <div className="partner-logo-wrapper">
               <img src="/ieee-logo.png" alt="IEEE SPS Kerala Chapter" className="partner-logo ieee-logo" />
             </div>

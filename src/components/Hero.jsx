@@ -62,8 +62,8 @@ const Hero = ({ onOpenRegistration }) => {
 
         {/* Subline */}
         <p className="hero-subline">
-          A premier statewide hackathon initiative by {event.collaborators.lead}{' '}
-          <span className="subline-milestone">({event.collaborators.leadNote})</span> in joint collaboration with {event.collaborators.coOrganizer}.
+          A statewide hackathon presented by {event.collaborators.lead}{' '}
+          <span className="subline-milestone">({event.collaborators.leadNote})</span> in collaboration with {event.collaborators.coOrganizer}.
         </p>
 
         {/* Feature Pills */}

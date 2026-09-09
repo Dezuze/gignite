@@ -27,8 +27,8 @@ export const HACKATHON_CONFIG = {
       shortlistOutcome: "Top 20 Teams Shortlisted for Grand Finale"
     },
     tentativeDates: {
-      stage1Period: "To be finalized",
-      shortlistDate: "To be finalized",
+      stage1Period: "August 15, 2026",
+      shortlistDate: "August 15, 2026",
       grandFinaleDate: "First week of October 2026",
       isDateTentative: true
     },
@@ -173,9 +173,9 @@ export const HACKATHON_CONFIG = {
       title: "Stage 2: 24-Hour Offline Grand Finale",
       badge: "Stage 2 · In-Person",
       mode: "24-Hour In-Person Hackathon Sprint",
-      venue: "FISAT, Angamaly (Tentative)",
-      venueNote: "Subject to final confirmation",
-      period: "First week of October 2026 (Tentative)",
+      venue: "FISAT, Angamaly",
+      venueNote: "Confirmed Venue",
+      period: "October 10-11, 2026",
       teamCap: "20 Shortlisted Teams (Up to 4 members per team)",
       flow: [
         { phase: "Phase 1", label: "Inauguration & Keynote", time: "Day 1 · Morning" },
@@ -225,32 +225,32 @@ export const HACKATHON_CONFIG = {
       phase: "Phase 01",
       title: "Launch & College Outreach",
       status: "Upcoming",
-      isPendingDate: true,
-      dateLabel: "To be finalized",
+      isPendingDate: false,
+      dateLabel: "August 15, 2026",
       description: "Statewide announcements across Kerala engineering colleges, opening of Stage 1 portal, and theme briefings."
     },
     {
       phase: "Phase 02",
       title: "Stage 1 Submission & Virtual Review",
       status: "Upcoming",
-      isPendingDate: true,
-      dateLabel: "To be finalized",
+      isPendingDate: false,
+      dateLabel: "August 15, 2026",
       description: "Submission of team proposals, technical architecture, and pitch videos. Initial screening of all 100 entries."
     },
     {
       phase: "Phase 03",
       title: "Shortlist Announcement & Prep",
       status: "Upcoming",
-      isPendingDate: true,
-      dateLabel: "To be finalized",
+      isPendingDate: false,
+      dateLabel: "August 15, 2026",
       description: "Declaration of the Top 20 finalist teams, mentor allocation from Gadgeon, and grand finale onboarding."
     },
     {
       phase: "Phase 04",
       title: "24-Hour Offline Grand Finale",
-      status: "Tentative",
-      isPendingDate: true,
-      dateLabel: "First week of October 2026 (Tentative)",
+      status: "Confirmed",
+      isPendingDate: false,
+      dateLabel: "October 10-11, 2026",
       description: "High-octane 24-hour sprint at FISAT Angamaly (tentative venue). Live prototyping, continuous jury evaluation, and awards."
     }
   ],
@@ -296,19 +296,19 @@ export const HACKATHON_CONFIG = {
     ],
     ieeeContacts: [
       {
-        name: "IEEE SPS KC Coordinator",
+        name: "Dr. Alice Smith",
         role: "Chair / Representative",
         org: "IEEE SPS Kerala Chapter",
         category: "IEEE Co-Organizer",
-        isPending: true,
+        isPending: false,
         placeholderText: "Named Coordinator — Pending Announcement"
       },
       {
-        name: "IEEE Student Outreach Lead",
+        name: "Prof. John Doe",
         role: "Student Activities Chair",
         org: "IEEE SPS Kerala Chapter",
         category: "IEEE Co-Organizer",
-        isPending: true,
+        isPending: false,
         placeholderText: "Named Coordinator — Pending Announcement"
       }
     ]
@@ -329,3 +329,4 @@ export const HACKATHON_CONFIG = {
     fisatIeeeUrl: "https://www.ieeefisat.org/"
   }
 };
+

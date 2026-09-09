@@ -59,7 +59,7 @@ const Team = () => {
 
         <div className="team-grid centered-grid">
           {team.ieeeContacts.map((contact, index) => (
-            <div key={index} className="team-card glass-card team-card-pending centered-team-card">
+            <div key={index} className="team-card glass-card centered-team-card">
               <div className="team-avatar-wrap">
                 <div className="team-avatar-placeholder pending-avatar">
                   <Icon name="globe" size={18} color="var(--color-muted)" />
@@ -67,19 +67,14 @@ const Team = () => {
               </div>
 
               <div className="team-info centered-text">
-                <span className="badge-tentative">
-                  <span className="pulse-dot"></span>
-                  <span>Pending</span>
-                </span>
+                
                 <h3 className="team-name">{contact.name}</h3>
                 <p className="team-role">{contact.role}</p>
                 <div className="team-org-row centered-org-row">
                   <Icon name="globe" size={14} color="var(--color-muted)" />
                   <span className="team-org-name">{contact.org}</span>
                 </div>
-                <div className="pending-notice">
-                  <span>{contact.placeholderText}</span>
-                </div>
+                
               </div>
             </div>
           ))}
@@ -90,3 +85,4 @@ const Team = () => {
 };
 
 export default Team;
+
