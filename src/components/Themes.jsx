@@ -9,9 +9,6 @@ const Themes = ({ onSelectThemeForRegistration }) => {
   return (
     <section id="themes" className="section-container themes-section">
       <div className="section-header centered-header">
-        <div className="section-eyebrow">
-          <span>02 · Innovation Tracks</span>
-        </div>
         <h2 className="section-title">
           5 Focused <span className="gradient-text">AI Themes</span>
         </h2>

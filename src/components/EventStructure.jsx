@@ -10,9 +10,6 @@ const EventStructure = () => {
   return (
     <section id="format" className="section-container event-structure-section">
       <div className="section-header centered-header">
-        <div className="section-eyebrow">
-          <span>03 · Competition Format</span>
-        </div>
         <h2 className="section-title">
           Two-Stage <span className="gradient-text">Event Architecture</span>
         </h2>

@@ -9,9 +9,6 @@ const Guidelines = () => {
   return (
     <section id="guidelines" className="section-container guidelines-section">
       <div className="section-header centered-header">
-        <div className="section-eyebrow">
-          <span>{guidelines.eyebrow}</span>
-        </div>
         <h2 className="section-title">
           {guidelines.title} <span className="gradient-text">{guidelines.titleGradient}</span>
         </h2>

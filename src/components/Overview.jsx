@@ -10,9 +10,6 @@ const Overview = () => {
   return (
     <section id="overview" className="section-container overview-section">
       <div className="section-header">
-        <div className="section-eyebrow">
-          <span>01 · Program Overview</span>
-        </div>
         <h2 className="section-title">
           Engineering the <span className="gradient-text">Next Frontier</span> of AI
         </h2>

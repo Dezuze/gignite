@@ -6,9 +6,6 @@ const Team = () => {
   return (
     <section id="team" className="section-container team-section">
       <div className="section-header centered-header">
-        <div className="section-eyebrow">
-          <span>06 · Leadership &amp; Mentorship</span>
-        </div>
         <h2 className="section-title">
           Organizing <span className="gradient-text">Points of Contact</span>
         </h2>

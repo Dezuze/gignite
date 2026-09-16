@@ -9,9 +9,6 @@ const Timeline = () => {
   return (
     <section id="timeline" className="section-container timeline-section">
       <div className="section-header">
-        <div className="section-eyebrow">
-          <span>05 · Schedule &amp; Milestones</span>
-        </div>
         <h2 className="section-title">
           Tentative <span className="gradient-text">Timeline</span>
         </h2>

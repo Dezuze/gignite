@@ -9,9 +9,6 @@ const Prizes = () => {
   return (
     <section id="prizes" className="section-container prizes-section">
       <div className="section-header centered-header">
-        <div className="section-eyebrow">
-          <span>04 · Rewards &amp; Honors</span>
-        </div>
         <h2 className="section-title">
           Prizes &amp; <span className="gradient-text">Recognition</span>
         </h2>
