@@ -128,7 +128,7 @@ const Footer = ({ onOpenRegistration }) => {
         {/* Bottom Bar */}
         <div className="footer-bottom-bar">
           <p className="footer-copyright">
-            &copy; 2026 <strong>gIGNITE</strong>. Sponsored by <a href="https://www.gadgeon.com/" target="_blank" rel="noopener noreferrer">Gadgeon Smart Systems Pvt. Ltd.</a> In co-organization with <a href="https://www.ieeespskc.in/" target="_blank" rel="noopener noreferrer">IEEE SPS Kerala Chapter</a>.
+            &copy; 2026 <strong>gIGNITE</strong>. Sponsored by <a href="https://www.gadgeon.com/" target="_blank" rel="noopener noreferrer">Gadgeon Smart Systems Pvt. Ltd.</a>
           </p>
 
           <div className="footer-quick-links">

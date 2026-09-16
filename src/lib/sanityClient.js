@@ -1,7 +1,7 @@
 import { createClient } from '@sanity/client';
 
 export const sanityClient = createClient({
-  projectId: import.meta.env.VITE_SANITY_PROJECT_ID, // you can find this in sanity.cli.js or dashboard
+  projectId: import.meta.env.VITE_SANITY_PROJECT_ID || 'fzj1ump9', // studio project ID
   dataset: import.meta.env.VITE_SANITY_DATASET || 'production',
   useCdn: false, // `false` if you want to ensure fresh data for mutations
   apiVersion: '2024-03-01', // use a UTC date string

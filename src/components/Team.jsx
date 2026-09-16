@@ -1,11 +1,8 @@
 import React from 'react';
-import { HACKATHON_CONFIG } from '../data/hackathonConfig';
 import { Icon } from './Icons';
 import './Team.css';
 
 const Team = () => {
-  const { team } = HACKATHON_CONFIG;
-
   return (
     <section id="team" className="section-container team-section">
       <div className="section-header centered-header">
@@ -20,65 +17,18 @@ const Team = () => {
         </p>
       </div>
 
-      {/* Gadgeon Organizing Committee (6 contacts) */}
-      <div className="team-group-block">
-        <div className="team-group-header centered-group-header">
-          <span className="group-pill sponsor-pill">Gadgeon Organizing Committee</span>
-          <span className="group-tagline">15th Anniversary Hackathon Taskforce</span>
+      <div className="tba-container glass-card">
+        <div className="tba-icon-wrapper">
+          <Icon name="users" size={28} color="var(--color-primary)" />
         </div>
-
-        <div className="team-grid centered-grid">
-          {team.gadgeonContacts.map((contact, index) => (
-            <div key={index} className="team-card glass-card centered-team-card">
-              <div className="team-avatar-wrap">
-                <div className="team-avatar-placeholder">
-                  <Icon name="users" size={20} color="var(--color-primary)" />
-                </div>
-              </div>
-
-              <div className="team-info centered-text">
-                <span className="team-category-badge">{contact.category}</span>
-                <h3 className="team-name">{contact.name}</h3>
-                <p className="team-role">{contact.role}</p>
-                <div className="team-org-row centered-org-row">
-                  <Icon name="building" size={14} color="var(--color-muted)" />
-                  <span className="team-org-name">{contact.org}</span>
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="tba-badge">
+          <span className="pulse-dot"></span>
+          <span>To Be Announced</span>
         </div>
-      </div>
-
-      {/* IEEE SPS Kerala Chapter Coordinators */}
-      <div className="team-group-block">
-        <div className="team-group-header centered-group-header">
-          <span className="group-pill ieee-pill">IEEE SPS Kerala Chapter Coordination</span>
-          <span className="group-tagline">Co-Organizer Representation</span>
-        </div>
-
-        <div className="team-grid centered-grid">
-          {team.ieeeContacts.map((contact, index) => (
-            <div key={index} className="team-card glass-card centered-team-card">
-              <div className="team-avatar-wrap">
-                <div className="team-avatar-placeholder pending-avatar">
-                  <Icon name="globe" size={18} color="var(--color-muted)" />
-                </div>
-              </div>
-
-              <div className="team-info centered-text">
-                
-                <h3 className="team-name">{contact.name}</h3>
-                <p className="team-role">{contact.role}</p>
-                <div className="team-org-row centered-org-row">
-                  <Icon name="globe" size={14} color="var(--color-muted)" />
-                  <span className="team-org-name">{contact.org}</span>
-                </div>
-                
-              </div>
-            </div>
-          ))}
-        </div>
+        <h3 className="tba-title">Organizing Committee &amp; Coordination</h3>
+        <p className="tba-desc">
+          The points of contact and coordination committee will be announced soon.
+        </p>
       </div>
     </section>
   );

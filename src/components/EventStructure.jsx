@@ -1,7 +1,6 @@
 import React from 'react';
 import { HACKATHON_CONFIG } from '../data/hackathonConfig';
 import { Icon } from './Icons';
-import VenueMap from './VenueMap';
 import './EventStructure.css';
 
 const EventStructure = () => {
@@ -101,7 +100,6 @@ const EventStructure = () => {
                 <span className="meta-box-val">{stage2.period}</span>
               </div>
             </div>
-          <VenueMap />
 
             <div className="meta-highlight-box">
               <div className="meta-box-icon">
