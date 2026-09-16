@@ -411,11 +411,6 @@ export const HACKATHON_CONFIG = {
         question: "What facilities and hospitality are provided during the 24-hour sprint?",
         category: "Grand Finale & Hardware",
         answer: "Shortlisted finalist teams receive complete hospitality at FISAT, including breakfast, lunch, dinner, midnight energy snacks, coffee/tea stations, dedicated rest lounges, and 24/7 security."
-      },
-      {
-        question: "What career opportunities and perks are available beyond cash prizes?",
-        category: "General & Eligibility",
-        answer: "Top-performing teams and standout individual innovators will be considered for priority internship and recruitment interview opportunities at Gadgeon Smart Systems, in addition to official IEEE SPS Kerala Chapter Certificates of Technical Merit and post-event project incubation mentorship."
       }
     ]
   },
