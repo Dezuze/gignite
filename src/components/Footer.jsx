@@ -132,6 +132,7 @@ const Footer = ({ onOpenRegistration }) => {
           </p>
 
           <div className="footer-quick-links">
+            <a href="#about">About</a>
             <a href="#overview">Overview</a>
             <a href="#themes">Themes</a>
             <a href="#format">Format</a>

@@ -133,27 +133,6 @@
   justify-content: center;
 }
 
-.hero-eyebrow-wrapper {
-  margin-bottom: 18px;
-}
-
-/* Clean Eyebrow without pill background */
-.hero-clean-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.eyebrow-text {
-  font-family: var(--font-mono);
-  font-size: clamp(0.85rem, 1.5vw, 1rem);
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--color-primary);
-  text-shadow: none;
-}
-
 .hero-title-wrapper {
   width: 100%;
   margin-bottom: 20px;

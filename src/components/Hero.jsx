@@ -46,13 +46,6 @@ const Hero = ({ onOpenRegistration }) => {
 
       {/* Hero Content Container */}
       <div className="hero-container">
-        {/* Eyebrow */}
-        <div className="hero-eyebrow-wrapper">
-          <div className="hero-clean-eyebrow">
-            <span className="eyebrow-text">{event.eyebrow}</span>
-          </div>
-        </div>
-
         {/* Kinetic Main Headline */}
         <div className="hero-title-wrapper">
           <div className="hero-main-logo-wrapper">

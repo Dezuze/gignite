@@ -3,6 +3,7 @@ import Lenis from 'lenis';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import StatementBand from './components/StatementBand';
+import About from './components/About';
 import Overview from './components/Overview';
 import Themes from './components/Themes';
 import EventStructure from './components/EventStructure';
@@ -45,7 +46,7 @@ function App() {
 
     // Target sections and cards
     const animatedElements = document.querySelectorAll(
-      '.section-container, .statement-band-wrapper, .glass-card, .stage-hero-card, .theme-card, .award-chip-card, .team-card, .timeline-phase-item'
+      '.section-container, .statement-band-wrapper, .glass-card, .about-card, .stage-hero-card, .theme-card, .award-chip-card, .team-card, .timeline-phase-item'
     );
 
     animatedElements.forEach((el) => {
@@ -88,7 +89,10 @@ function App() {
         {/* 2. Kinetic Statement Band (3D Flipper) */}
         <StatementBand />
 
-        {/* 3. Program Overview */}
+        {/* 3. About the Initiative (gIGNITE, Gadgeon, IEEE SPS Kerala Chapter) */}
+        <About onOpenRegistration={handleOpenRegistration} />
+
+        {/* 4. Program Overview */}
         <Overview />
 
         {/* 4. AI Themes (5 cards, centralized) */}

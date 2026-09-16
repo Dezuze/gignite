@@ -16,6 +16,7 @@ const Navbar = ({ onOpenRegistration }) => {
   }, []);
 
   const navLinks = [
+    { name: 'About', href: '#about' },
     { name: 'Overview', href: '#overview' },
     { name: 'Themes', href: '#themes' },
     { name: 'Format', href: '#format' },

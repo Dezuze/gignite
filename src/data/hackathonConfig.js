@@ -5,7 +5,6 @@
 
 export const HACKATHON_CONFIG = {
   event: {
-    eyebrow: "AI INNOVATION HACKATHON 2026",
     collaborators: {
       lead: "Gadgeon Smart Systems Pvt. Ltd.",
       leadNote: "Celebrating 15 Years of Engineering Excellence"
@@ -21,6 +20,46 @@ export const HACKATHON_CONFIG = {
 
   statementBand: {
     tagline: "Empowering Kerala's finest engineering minds to build high-impact, real-world AI and signal processing solutions."
+  },
+
+  about: {
+    title: "Behind the Hackathon",
+    subtitle: "A statewide alliance bridging academic innovation with enterprise product engineering.",
+    pillars: [
+      {
+        id: "gignite",
+        accent: "gignite",
+        name: "gIGNITE 2026",
+        logo: "/logo.png",
+        logoAlt: "gIGNITE 2026",
+        description: "Kerala's flagship AI & Signal Processing Hackathon. Students build deployable, hardware-ready intelligence across five specialized tracks, culminating in a 24-hour Grand Finale sprint at FISAT.",
+        ctaText: "Explore Themes",
+        ctaType: "scroll",
+        ctaTarget: "#themes"
+      },
+      {
+        id: "gadgeon",
+        accent: "gadgeon",
+        name: "Gadgeon Smart Systems",
+        logo: "/gadgeon-logo.png",
+        logoAlt: "Gadgeon Smart Systems",
+        description: "A premier product engineering and IoT enterprise celebrating 15 years of innovation. Gadgeon powers gIGNITE with real-world enterprise problem curation and technical mentorship from senior architects.",
+        ctaText: "Visit gadgeon.com",
+        ctaLink: "https://www.gadgeon.com/",
+        ctaType: "external"
+      },
+      {
+        id: "ieee-sps",
+        accent: "ieee",
+        name: "IEEE SPS Kerala Chapter",
+        logo: "/ieee_sps_kc_logo.png",
+        logoAlt: "IEEE SPS Kerala Chapter",
+        description: "A leading professional society advancing signal processing, computer vision, and machine learning research and student innovation across engineering colleges throughout Kerala.",
+        ctaText: "Visit ieeespskc.in",
+        ctaLink: "https://www.ieeespskc.in/",
+        ctaType: "external"
+      }
+    ]
   },
 
   overview: {
