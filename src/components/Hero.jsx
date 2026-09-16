@@ -26,7 +26,7 @@ const Hero = ({ onOpenRegistration }) => {
       <div className="hero-bg-visuals" aria-hidden="true">
         <div className="hero-glow hero-glow-left"></div>
         <div className="hero-glow hero-glow-right"></div>
-        
+
 
 
         {/* Technical Floating Accent Nodes */}
@@ -63,7 +63,7 @@ const Hero = ({ onOpenRegistration }) => {
         {/* Subline */}
         <p className="hero-subline">
           A statewide hackathon presented by {event.collaborators.lead}{' '}
-          <span className="subline-milestone">({event.collaborators.leadNote})</span> in collaboration with {event.collaborators.coOrganizer}.
+          <span className="subline-milestone">({event.collaborators.leadNote})</span>.
         </p>
 
         {/* Feature Pills */}

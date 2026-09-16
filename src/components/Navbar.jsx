@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { HACKATHON_CONFIG } from '../data/hackathonConfig';
 import { Icon } from './Icons';
 import './Navbar.css';
 

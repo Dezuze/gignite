@@ -1,10 +1,7 @@
 import React from 'react';
-import { HACKATHON_CONFIG } from '../data/hackathonConfig';
-import { Icon } from './Icons';
 import './Themes.css';
 
 const Themes = ({ onSelectThemeForRegistration }) => {
-  const { themes } = HACKATHON_CONFIG;
 
   return (
     <section id="themes" className="section-container themes-section">
