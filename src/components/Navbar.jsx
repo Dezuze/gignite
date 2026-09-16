@@ -21,6 +21,8 @@ const Navbar = ({ onOpenRegistration }) => {
     { name: 'Themes', href: '#themes' },
     { name: 'Format', href: '#format' },
     { name: 'Timeline', href: '#timeline' },
+    { name: 'Rules', href: '#guidelines' },
+    { name: 'FAQ', href: '#faq' },
   ];
 
   const handleNavClick = (e, href) => {

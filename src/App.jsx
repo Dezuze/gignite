@@ -8,7 +8,9 @@ import Themes from './components/Themes';
 import EventStructure from './components/EventStructure';
 import Prizes from './components/Prizes';
 import Timeline from './components/Timeline';
+import Guidelines from './components/Guidelines';
 import Team from './components/Team';
+import Faq from './components/Faq';
 import ClosingCta from './components/ClosingCta';
 import Footer from './components/Footer';
 import RegistrationModal from './components/RegistrationModal';
@@ -101,10 +103,16 @@ function App() {
         {/* 8. Tentative Timeline */}
         <Timeline />
 
-        {/* 9. Organizing Points of Contact */}
+        {/* 9. Rules & Code of Conduct */}
+        <Guidelines />
+
+        {/* 10. Organizing Points of Contact */}
         <Team />
 
-        {/* 10. Closing CTA */}
+        {/* 11. Frequently Asked Questions */}
+        <Faq onOpenRegistration={() => handleOpenRegistration('01')} />
+
+        {/* 12. Closing CTA */}
         <ClosingCta onOpenRegistration={() => handleOpenRegistration('01')} />
       </main>
 

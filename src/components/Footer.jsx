@@ -137,6 +137,8 @@ const Footer = ({ onOpenRegistration }) => {
             <a href="#format">Format</a>
             <a href="#timeline">Timeline</a>
             <a href="#prizes">Prizes</a>
+            <a href="#guidelines">Rules</a>
+            <a href="#faq">FAQ</a>
             <button className="footer-reg-link" onClick={onOpenRegistration}>
               Register Now →
             </button>

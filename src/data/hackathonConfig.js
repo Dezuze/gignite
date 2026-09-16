@@ -314,6 +314,112 @@ export const HACKATHON_CONFIG = {
     ]
   },
 
+  guidelines: {
+    eyebrow: "07 · Standards & Fair Play",
+    title: "Hackathon Rules &",
+    titleGradient: "Code of Conduct",
+    subtitle: "Ensuring an equitable, ethical, and high-impact engineering competition for all participants.",
+    rules: [
+      {
+        id: "eligibility",
+        icon: "users",
+        title: "Team Structure & Eligibility",
+        badge: "2–4 Members",
+        description: "Open statewide to currently enrolled undergraduate and postgraduate engineering students in Kerala. Cross-department and inter-collegiate teams are encouraged."
+      },
+      {
+        id: "fresh-code",
+        icon: "cpu",
+        title: "Fresh Code & Originality Policy",
+        badge: "Sprint Rules",
+        description: "Foundational AI models, public datasets, and open-source libraries are permitted. However, application glue code, device firmware, and system integrations must be built freshly during the 24-hour sprint."
+      },
+      {
+        id: "ip-rights",
+        icon: "shield",
+        title: "100% IP Retention",
+        badge: "Participant Owned",
+        description: "Participants retain full, unencumbered intellectual property rights over all code, circuit schematics, algorithms, and prototypes developed during gIGNITE 2026."
+      },
+      {
+        id: "safety",
+        icon: "alert-triangle",
+        title: "Hardware & Lab Safety",
+        badge: "Safety First",
+        description: "Prototypes brought to the Grand Finale must adhere to standard electrical safety standards (low voltage DC supplies). Hazardous setups or high-voltage circuits without prior mentor sign-off are strictly prohibited."
+      },
+      {
+        id: "ethics",
+        icon: "compass",
+        title: "Responsible & Ethical AI",
+        badge: "Human Centric",
+        description: "All solutions must uphold principles of privacy, safety, and non-discrimination. Solutions involving deceptive deepfakes, malicious surveillance, or unauthorized personal data collection will be disqualified."
+      },
+      {
+        id: "conduct",
+        icon: "target",
+        title: "Professionalism & Fair Play",
+        badge: "Zero Tolerance",
+        description: "Treat fellow participants, mentors, jury members, and volunteers with respect. Tampering with rival hardware, plagiarism, or harassment will lead to immediate team disqualification."
+      }
+    ]
+  },
+
+  faqs: {
+    eyebrow: "08 · Clarity & Answers",
+    title: "Frequently Asked",
+    titleGradient: "Questions",
+    subtitle: "Got questions? We've compiled essential details regarding eligibility, submissions, hardware, and event logistics.",
+    categories: ["All", "General & Eligibility", "Submissions & Rules", "Grand Finale & Hardware"],
+    items: [
+      {
+        question: "Who is eligible to participate in gIGNITE 2026?",
+        category: "General & Eligibility",
+        answer: "Any currently enrolled undergraduate or postgraduate engineering student from recognized engineering colleges and universities across Kerala can participate. All branches and engineering specializations (CSE, ECE, EEE, Robotics, AI/ML, Mechanical, etc.) are welcome."
+      },
+      {
+        question: "What is the allowed team size and structure?",
+        category: "General & Eligibility",
+        answer: "Teams must consist of 2 to 4 members. We strongly recommend forming multidisciplinary teams with complementary skills across hardware/embedded systems, machine learning/DSP algorithms, and software/UX development. Cross-department and cross-college teams are fully permitted."
+      },
+      {
+        question: "Is there any registration fee for Stage 1?",
+        category: "General & Eligibility",
+        answer: "No. Stage 1 registration and virtual proposal submission is completely free of charge for all eligible student teams."
+      },
+      {
+        question: "What do we need to submit for Stage 1 (Virtual Shortlisting)?",
+        category: "Submissions & Rules",
+        answer: "Teams need to submit an executive project proposal (up to 5 pages PDF or slide deck) outlining: (1) Problem Statement & Target Domain, (2) Proposed System Architecture & Signal Processing/AI Pipeline, (3) Practical Feasibility & Hardware Components, and (4) Optional proof-of-concept GitHub repository or simulation link."
+      },
+      {
+        question: "Who owns the intellectual property (IP) of our project?",
+        category: "Submissions & Rules",
+        answer: "You do — 100%. All intellectual property, software code, circuit designs, and prototypes developed by your team during gIGNITE remain the sole property of the team members. Neither Gadgeon Smart Systems nor IEEE SPS claims any ownership."
+      },
+      {
+        question: "Can we use pre-trained AI models or pre-existing code?",
+        category: "Submissions & Rules",
+        answer: "Yes, foundational and pre-trained open-source models (like MobileNet, YOLO, Whisper, Llama, Hugging Face models) and standard libraries are encouraged. However, all domain adaptation, data preprocessing pipelines, hardware firmware, API connections, and user interface logic must be built during the 24-hour finale."
+      },
+      {
+        question: "Will hardware components be provided for the Stage 2 Grand Finale?",
+        category: "Grand Finale & Hardware",
+        answer: "The Grand Finale venue (FISAT) provides high-speed Wi-Fi, dedicated power workstations, basic electrical lab testing tools (digital multimeters, oscilloscopes), and soldering stations. Teams should bring their core edge computing boards (e.g. ESP32, Raspberry Pi, STM32, Jetson) and specialized sensors. A backup pool of common development boards and sensor kits will be available on-site for emergency hardware needs."
+      },
+      {
+        question: "What facilities and hospitality are provided during the 24-hour sprint?",
+        category: "Grand Finale & Hardware",
+        answer: "Shortlisted finalist teams receive complete hospitality at FISAT, including breakfast, lunch, dinner, midnight energy snacks, coffee/tea stations, dedicated rest lounges, and 24/7 security."
+      },
+      {
+        question: "What career opportunities and perks are available beyond cash prizes?",
+        category: "General & Eligibility",
+        answer: "Top-performing teams and standout individual innovators will be considered for priority internship and recruitment interview opportunities at Gadgeon Smart Systems, in addition to official IEEE SPS Kerala Chapter Certificates of Technical Merit and post-event project incubation mentorship."
+      }
+    ]
+  },
+
   closingCta: {
     headline: "Ready to Fuel India's AI Future?",
     subline: "Assemble your squad, choose your track, and take your shot at exciting prizes and industry acclaim.",
